@@ -11,7 +11,11 @@ if [[ $current_branch = $protected_branch ]] ; then
     echo -e "${YELLOW}Running pre push to master check...${NC}"
 
     echo -e "${YELLOW}Trying to build tests project...${NC}"
-
+    
+    #Let's speed things up a little bit
+    DOTNET_CLI_TELEMETRY_OPTOUT=1
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+    
     # build the project
     dotnet build
 
