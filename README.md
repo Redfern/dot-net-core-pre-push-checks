@@ -6,7 +6,7 @@ This is a git pre push script for dot net core to check your push isn't going to
 
 You need to place this is your git repo folder in /.git/hooks/, this is a hidden folder so you will have to turn on "show hidden folders" or cd into the dir in terminal. E.g. cd /.git/hooks inside of your local repo folder.
 
-All you should need to change is on line 28, "cd test", change this to to the root folder of your test project. e.g. cd test/MyTestProject.
+All you should need to change is on line 32, "cd test", change this to to the root folder of your test project. e.g. cd test/MyTestProject.
 
 ## How to run
 
